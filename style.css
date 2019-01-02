@@ -1,0 +1,303 @@
+/* FONTS */
+@font-face {
+  font-family: 'Circular Std Book';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Circular Std Book"), url("CircularStd-Book.otf") format("otf");
+}
+
+@font-face {
+  font-family: 'Circular Std Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Circular Std Bold"), url("CircularStd-Bold.otf") format("otf");
+}
+
+@font-face {
+  font-family: 'Circular Std Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Circular Std Medium"), url("CircularStd-Medium.otf") format("otf");
+}
+
+/* TYPOGRAPHY */
+/* line 26, D:/Userdata/Katja/Desktop/1/scss/style.scss */
+h1 {
+  font-family: 'Circular Std Bold';
+  font-weight: 500;
+  font-size: 2em;
+  line-height: 1.4em;
+  color: #272727;
+}
+
+/* line 34, D:/Userdata/Katja/Desktop/1/scss/style.scss */
+h2 {
+  font-family: 'Circular Std Bold';
+  font-weight: 500;
+  font-size: 2em;
+  line-height: 1.4em;
+  color: #272727;
+}
+
+/* line 42, D:/Userdata/Katja/Desktop/1/scss/style.scss */
+h3 {
+  font-family: 'Circular Std Bold';
+  font-weight: 500;
+  font-size: 1.4em;
+  line-height: 1.4em;
+  color: #272727;
+}
+
+/* line 50, D:/Userdata/Katja/Desktop/1/scss/style.scss */
+.btn {
+  border: 1px solid #272727;
+  font-family: 'Circular Std Bold';
+  font-size: 1.8em;
+}
+
+/* line 56, D:/Userdata/Katja/Desktop/1/scss/style.scss */
+a {
+  color: #272727;
+}
+
+/* line 58, D:/Userdata/Katja/Desktop/1/scss/style.scss */
+a:hover {
+  color: #272727;
+  text-decoration: none;
+}
+
+/* line 64, D:/Userdata/Katja/Desktop/1/scss/style.scss */
+p {
+  font-family: 'Circular Std Book';
+  font-weight: 500;
+  font-size: 1.2em;
+  color: #272727;
+}
+
+/* line 72, D:/Userdata/Katja/Desktop/1/scss/style.scss */
+#footer p {
+  font-family: 'Circular Std Book';
+  font-weight: 500;
+  font-size: 1.2em;
+  color: #272727;
+}
+
+/* line 79, D:/Userdata/Katja/Desktop/1/scss/style.scss */
+#footer a {
+  font-family: 'Circular Std Bold';
+  font-weight: 500;
+  font-size: 1.2em;
+  color: #272727;
+  text-decoration: underline;
+}
+
+/* line 85, D:/Userdata/Katja/Desktop/1/scss/style.scss */
+#footer a:hover {
+  color: #5B72F6;
+}
+
+/* line 90, D:/Userdata/Katja/Desktop/1/scss/style.scss */
+#footer a:first-child {
+  margin-right: 35px;
+}
+
+/* line 96, D:/Userdata/Katja/Desktop/1/scss/style.scss */
+.underline--magical {
+  background-image: linear-gradient(120deg, #5B72F6 0%, #5B72F6 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.3em;
+  background-position: 0 90%;
+  transition: background-size 0.30s ease-in;
+}
+
+/* line 102, D:/Userdata/Katja/Desktop/1/scss/style.scss */
+.underline--magical:hover {
+  background-size: 110% 110%;
+}
+
+/* ANI */
+/* line 109, D:/Userdata/Katja/Desktop/1/scss/style.scss */
+.arrowHeader {
+  font-family: "Circular Std Bold";
+  font-size: 24px;
+  color: #AFBDCE;
+  letter-spacing: 0.08px;
+  transition-timing-function: ease-in-out;
+  -webkit-transition-duration: 0.2s;
+  /* Safari */
+  transition-duration: 0.2s;
+}
+
+/* line 120, D:/Userdata/Katja/Desktop/1/scss/style.scss */
+.arrowHeader::after {
+  display: inline-block;
+  padding-left: 10px;
+  content: "\0279E";
+  -webkit-transition: transform 0.3s ease-out;
+  -moz-transition: transform 0.3s ease-out;
+  -ms-transition: transform 0.3s ease-out;
+  -o-transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+}
+
+/* line 131, D:/Userdata/Katja/Desktop/1/scss/style.scss */
+.arrowHeader:hover {
+  color: #272727;
+}
+
+/* line 135, D:/Userdata/Katja/Desktop/1/scss/style.scss */
+.arrowHeader:hover::after {
+  -webkit-transform: translateX(10px);
+  -moz-transform: translateX(10px);
+  -ms-transform: translateX(10px);
+  -o-transform: translateX(10px);
+  transform: translateX(10px);
+}
+
+/* NAVBAR */
+/* line 147, D:/Userdata/Katja/Desktop/1/scss/style.scss */
+.navbar {
+  padding: 30px;
+  background-color: transparent;
+}
+
+/* line 151, D:/Userdata/Katja/Desktop/1/scss/style.scss */
+.navbar .navbar-brand {
+  font-family: 'Circular Std Bold';
+  font-weight: 500;
+  font-size: 1.4em;
+  line-height: 1.4em;
+  color: #272727;
+}
+
+/* line 159, D:/Userdata/Katja/Desktop/1/scss/style.scss */
+.navbar .nav-link {
+  font-family: 'Circular Std Bold';
+  font-weight: 500;
+  font-size: 1.2em;
+  color: #272727;
+  text-decoration: underline;
+}
+
+/* line 165, D:/Userdata/Katja/Desktop/1/scss/style.scss */
+.navbar .nav-link:hover {
+  color: #5B72F6;
+}
+
+/* line 169, D:/Userdata/Katja/Desktop/1/scss/style.scss */
+.navbar .nav-link:first-child {
+  margin-right: 35px;
+}
+
+/* INTRO */
+/* line 180, D:/Userdata/Katja/Desktop/1/scss/style.scss */
+.jumbotron {
+  padding: 30px;
+  background-color: transparent;
+}
+
+/* GALLERY */
+/* line 188, D:/Userdata/Katja/Desktop/1/scss/style.scss */
+.fh5co-grid {
+  height: 400px;
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 30px;
+  position: relative;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  border-radius: 7px;
+}
+
+@media screen and (max-width: 480px) {
+  /* line 201, D:/Userdata/Katja/Desktop/1/scss/style.scss */
+  .fh5co-grid {
+    height: 400px;
+  }
+}
+
+/* line 206, D:/Userdata/Katja/Desktop/1/scss/style.scss */
+.fh5co-grid .image-popup {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  border-radius: 7px;
+}
+
+/* line 220, D:/Userdata/Katja/Desktop/1/scss/style.scss */
+.fh5co-grid .image-popup .prod-title {
+  position: absolute;
+  top: 50%;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  margin-top: -25px;
+}
+
+/* line 229, D:/Userdata/Katja/Desktop/1/scss/style.scss */
+.fh5co-grid .image-popup .prod-title h3 {
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 20px;
+}
+
+/* line 235, D:/Userdata/Katja/Desktop/1/scss/style.scss */
+.fh5co-grid .image-popup .prod-title span {
+  color: #fff;
+}
+
+/* line 239, D:/Userdata/Katja/Desktop/1/scss/style.scss */
+.fh5co-grid:hover {
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+/* line 246, D:/Userdata/Katja/Desktop/1/scss/style.scss */
+.fh5co-grid:hover .image-popup {
+  opacity: 1;
+}
+
+/* line 251, D:/Userdata/Katja/Desktop/1/scss/style.scss */
+.js .animate-box {
+  opacity: 0;
+}
+
+/* CONTACT */
+/* line 258, D:/Userdata/Katja/Desktop/1/scss/style.scss */
+#contact {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+/* FOOTER */
+/* line 265, D:/Userdata/Katja/Desktop/1/scss/style.scss */
+#footer {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+/* PROJECT STYLING */
+/* line 273, D:/Userdata/Katja/Desktop/1/scss/style.scss */
+#info .info-text {
+  background-color: #E7F3F7;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+/* line 280, D:/Userdata/Katja/Desktop/1/scss/style.scss */
+#project-case {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+/*# sourceMappingURL=../style.map */
